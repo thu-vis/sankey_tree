@@ -164,7 +164,7 @@ export default {
 
             let node_basesize = min(this.level_dist/5, this.svg_height/25);
 
-            this.width_ratio = min(this.width_ratio, node_basesize*2)
+            this.width_ratio = min(this.width_ratio, node_basesize*2/that.h_data.min_weight)
             
             this.svg_g.attr("transform", "translate("+this.xshift+","+this.yshift+")");
 
